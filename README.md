@@ -10,7 +10,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 * [Materials](#materials)
 * [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
 * [Handling of WEB pages with connectivity to IBM Watson IoT Platform](#handling-of-web-pages-with-connectivity-to-ibm-watson-iot-platform)
-* [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform-(specifically-esp8266-using-arduinoide))
+* [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform)
 * [Make Portble](#make-portable)
 * [SSH Setup Optional](#ssh-setup-optional)
 * [References](#references)

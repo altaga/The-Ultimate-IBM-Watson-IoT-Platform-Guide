@@ -89,19 +89,19 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - To add your first "Device" we select the "+ Add Device" box.
 
-<img src="https://image.ibb.co/mcdGo0/Selecci-n-012.png" width="400">
+<img src="https://image.ibb.co/mcdGo0/Selecci-n-012.png" width="600">
 
 - Fill the fields of "Device Type" with the name you like to put on your device is only a label in our case we will put "ESP8266" and as Device ID we will put "Test001" but it can be any ID, it is recommended that this ID be the registration number of the device, after that press "Next".
 
-<img src="https://image.ibb.co/j2HgML/Selecci-n-014.png" width="400">
+<img src="https://image.ibb.co/j2HgML/Selecci-n-014.png" width="600">
 
 - Insert the "Metadata" that you like and press "Next".
 
-<img src="https://image.ibb.co/grLkgL/Selecci-n-015.png" width="400">
+<img src="https://image.ibb.co/grLkgL/Selecci-n-015.png" width="600">
 
 - Leave the field of "Authentication Token" empty, but if you like you can put your own Token, I recommend leaving empty for IBM to provide you with a unique code for your device,after that press "Next".
 
-<img src="https://image.ibb.co/huJz80/Selecci-n-016.png" width="400">
+<img src="https://image.ibb.co/huJz80/Selecci-n-016.png" width="600">
 
 - In the following box just press "Done".
 

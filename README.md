@@ -23,7 +23,8 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform
 
-## Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)
+## Handling of IoT devices using the IBM Watson IoT Platform 
+#(Specifically ESP8266 using ArduinoIDE)
 
 In this tutorial we will talk about the following topics.
 - Management of the IBM Watson IoT Platform.

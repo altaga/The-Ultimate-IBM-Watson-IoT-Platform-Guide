@@ -176,11 +176,11 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - Surprise, if you could, a little attention, you will have noticed that the "callback" is already integrated into the Arduino code and each time the device sends a message to the web page the page returns the same message as shown in the image.
 
-<img src="https://image.ibb.co/mnwfi0/Selecci-n-032.png" width="600">
+<img src="https://image.ibb.co/gJG2D0/Selecci-n-034.png" width="600">
 
 - The section of the code of the web page that is responsible for sending data returned is this.
 
-<img src="https://image.ibb.co/gJG2D0/Selecci-n-034.png" width="600">
+<img src="https://image.ibb.co/naSHwL/Selecci-n-033.png" width="600">
 
 ## References:
 

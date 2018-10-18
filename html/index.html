@@ -8,9 +8,12 @@
 
 var org = "YOUR_ORG"; // Your Organization ID
 var apl= "YOUR_MODIFIED_APIKEY" // PUTT YOUR API KEY AND REPLACE THE "-" WITH ":"
+// For this example, the topic should already work, but remember to change the
+// Device ID and the Type for what you put your devices on the platform.
+// "iot-2/type/DeviceType/id/DeviceID/evt/status/fmt/json"
+var topic = "iot-2/type/ESP8266/id/Test001/evt/status/fmt/json"
 
 client = new Paho.MQTT.Client(org+".messaging.internetofthings.ibmcloud.com", 8883, apl);
-//Example client = new Paho.MQTT.Client("m11.cloudmqtt.com", 32903, "web_" + parseInt(Math.random() * 100, 10));
 
 // set callback handlers
 client.onConnectionLost = onConnectionLost;
@@ -33,7 +36,7 @@ function onConnect() {
   // For this example, the topic should already work, but remember to change the
   // Device ID and the Type for what you put your devices on the platform.
   // "iot-2/type/DeviceType/id/DeviceID/evt/status/fmt/json"
-  client.subscribe("iot-2/type/ESP8266/id/Test001/evt/status/fmt/json");
+  client.subscribe(topic);
 }
 
 function doFail(e){

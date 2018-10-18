@@ -215,6 +215,18 @@ void loop() {
 
 <img src="https://image.ibb.co/mCcgML/Selecci-n-026.png" width="500">
 
+- Download the "html" folder where the basic page for mqtt connectivity with IBM comes from and follow the instructions below the image.
+
+<img src="https://image.ibb.co/h2NnBL/Selecci-n-027.png" width="600">
+
+  - Modify the org variable for your "organization id"
+  - Modify the variable apl by your "Api Key" but it is very important that you replace the "-" with ":" for example a example-exmaple001 -> a: example: exmaple001
+  - Modify userName for your "Api Key"
+  - Modify password for your "Authentication Token".
+  
+-  
+
+
 ## Connectivity between IoT device and WEB application:
 
 ## Connectivity between WEB application and IoT device:

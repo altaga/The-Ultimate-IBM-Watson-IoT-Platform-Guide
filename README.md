@@ -185,7 +185,15 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 ## Comments:
 
+This tutorial only shows you how the IBM IoT system is connected, the development of applications through this platform is necessary to develop it through javascript and through the messages received generate actions to the system.
 
+I recommend that if you are interested in this topic, look for the following terms to make a more landed application:
+
+- Progressive Web App.
+- HTML5
+  - Javascript
+  - CSS
+  - Ajax
 
 ## References:
 

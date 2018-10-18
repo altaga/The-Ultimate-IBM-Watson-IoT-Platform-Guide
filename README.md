@@ -180,7 +180,7 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - The section of the code of the web page that is responsible for sending data returned is this.
 
-<img src="https://image.ibb.co/naSHwL/Selecci-n-033.png" width="600">
+<img src="https://image.ibb.co/gJG2D0/Selecci-n-034.png" width="600">
 
 ## References:
 

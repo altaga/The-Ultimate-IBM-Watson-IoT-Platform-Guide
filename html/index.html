@@ -51,10 +51,11 @@ function onConnectionLost(responseObject) {
 }
 
 // called when a message arrives
-function onMessageArrived(message) {
+function onMessageArrived(message)
+{
     var mensaje = message.payloadString;
     messag = new Paho.MQTT.Message(mensaje);
-    messag.destinationName = "iot-2/type/ESP8266/id/Semaforo/cmd/status/fmt/json";
+    messag.destinationName = "iot-2/type/ESP8266/id/Test001/cmd/status/fmt/json";
     client.send(messag);
     console.log(mensaje);
     var payload = mensaje.substring(0, 12);

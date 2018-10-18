@@ -34,7 +34,7 @@ void callback(char* topic, byte* payload, unsigned int length)
   {
     data+=char(payload[i]);
   }
-  Serial.println(data); // In this case we print the data recive from the website.
+  Serial.println("Received Data:" + data); // In this case we print the data recive from the website.
 }
 
 void setup() {

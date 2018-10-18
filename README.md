@@ -107,11 +107,11 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
 
-https://image.ibb.co/nPU9af/Selecci-n-017.png
+<img src="https://image.ibb.co/nPU9af/Selecci-n-017.png" width="400">
 
 - If you scrolling down the screen you will see the "Showing Raw Data" window and here you can see the data sent by the ESP8266 (stay on this screen while you flash your device).
 
-https://image.ibb.co/cYDMML/Selecci-n-018.png
+<img src="https://image.ibb.co/cYDMML/Selecci-n-018.png" width="400">
 
 - For the Arduino code to work we need to install the following boards and libraries.
   - Libraries.

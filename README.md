@@ -107,11 +107,11 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
 
-<img src="https://image.ibb.co/nPU9af/Selecci-n-017.png" width="400">
+<img src="https://image.ibb.co/nPU9af/Selecci-n-017.png" width="600">
 
 - If you scrolling down the screen you will see the "Showing Raw Data" window and here you can see the data sent by the ESP8266 (stay on this screen while you flash your device).
 
-<img src="https://image.ibb.co/cYDMML/Selecci-n-018.png" width="400">
+<img src="https://image.ibb.co/cYDMML/Selecci-n-018.png" width="600">
 
 - For the Arduino code to work we need to install the following boards and libraries.
   - Libraries.
@@ -191,7 +191,7 @@ void loop() {
 
 - If everything went well up to this point you should see how the data appears (Do not worry if you see a strange message in the form of JSON, when we connect to our website this will not matter and we will see our message "Hello IBM").
 
-<img src="https://image.ibb.co/eLpjaf/Selecci-n-019.png" width="500">
+<img src="https://image.ibb.co/eLpjaf/Selecci-n-019.png" width="600">
 
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform:
 

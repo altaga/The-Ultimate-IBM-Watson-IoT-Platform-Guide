@@ -188,7 +188,11 @@ void loop() {
   delay(30000);
 }
 ```
-- 
+
+- If everything went well up to this point you should see how the data appears (Do not worry if you see a strange message in the form of JSON, when we connect to our website this will not matter and we will see our message "Hello IBM").
+
+<img src="https://image.ibb.co/eLpjaf/Selecci-n-019.png" width="500">
+
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform:
 
 ## Connectivity between IoT device and WEB application:

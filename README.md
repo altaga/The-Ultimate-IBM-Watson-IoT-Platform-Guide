@@ -274,6 +274,7 @@ void loop() {
 
 - The section of the code of the web page that is responsible for sending data returned is this.
 
+<img src="https://image.ibb.co/naSHwL/Selecci-n-033.png" width="600">
 
 
 

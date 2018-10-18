@@ -89,25 +89,29 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - To add your first "Device" we select the "+ Add Device" box.
 
-https://image.ibb.co/mcdGo0/Selecci-n-012.png
+<img src="https://image.ibb.co/mcdGo0/Selecci-n-012.png" width="400">
 
 - Fill the fields of "Device Type" with the name you like to put on your device is only a label in our case we will put "ESP8266" and as Device ID we will put "Test001" but it can be any ID, it is recommended that this ID be the registration number of the device, after that press "Next".
 
-https://image.ibb.co/j2HgML/Selecci-n-014.png
+<img src="https://image.ibb.co/j2HgML/Selecci-n-014.png" width="400">
 
 - Insert the "Metadata" that you like and press "Next".
 
-https://image.ibb.co/grLkgL/Selecci-n-015.png
+<img src="https://image.ibb.co/grLkgL/Selecci-n-015.png" width="400">
 
 - Leave the field of "Authentication Token" empty, but if you like you can put your own Token, I recommend leaving empty for IBM to provide you with a unique code for your device,after that press "Next".
 
-https://image.ibb.co/huJz80/Selecci-n-016.png
+<img src="https://image.ibb.co/huJz80/Selecci-n-016.png" width="400">
 
 - In the following box just press "Done".
 
 - In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
 
 https://image.ibb.co/nPU9af/Selecci-n-017.png
+
+- If you scrolling down the screen you will see the "Showing Raw Data" window and here you can see the data sent by the ESP8266 (stay on this screen while you flash your device).
+
+https://image.ibb.co/cYDMML/Selecci-n-018.png
 
 - For the Arduino code to work we need to install the following boards and libraries.
   - Libraries.
@@ -140,7 +144,7 @@ char token[] = TOKEN;
 char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;
 
 WiFiClientSecure wifiClient;
-PubSubClient client(server, 8883, wifiClient);
+PubSubClient client(server, 8883, wifiClient); //Never modify the 8883 as it is a safe port for sending data
 
 void setup() {
   Serial.begin(115200); Serial.println();
@@ -184,6 +188,7 @@ void loop() {
   delay(30000);
 }
 ```
+- 
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform:
 
 ## Connectivity between IoT device and WEB application:

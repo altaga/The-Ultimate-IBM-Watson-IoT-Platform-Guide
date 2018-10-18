@@ -12,7 +12,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 * [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
 * [Handling of WEB pages with connectivity to IBM Watson IoT Platform](#handling-of-web-pages-with-connectivity-to-ibm-watson-iot-platform)
 * [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform)
-* [Connectivity between IoT device and WEB application.](#connectivity-between-iot-device-and-web-application.)
+* [Connectivity between IoT device and WEB application](#connectivity-between-iot-device-and-web-application.)
 * [Connectivity between WEB application and IoT device](#connectivity-between-web-application-and-iot-device)
 * [References](#references)
 
@@ -30,7 +30,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 ## Connectivity between IoT device and WEB application:
 
 ## Connectivity between WEB application and IoT device:
- (Callback).
+(Callback).
 
 
 

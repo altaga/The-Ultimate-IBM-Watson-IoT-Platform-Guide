@@ -195,6 +195,26 @@ void loop() {
 
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform:
 
+- We press the "Apps" button in the left sidebar to create an API for our website.
+
+<img src="https://image.ibb.co/eNVMo0/Selecci-n-022.png" width="500">
+
+- Click on the "Generate API Key" button.
+
+<img src="https://image.ibb.co/fq8D1L/Selecci-n-023.png" width="500">
+
+- Fill in the description data and we will give you "Next".
+
+<img src="https://image.ibb.co/nyKxT0/Selecci-n-024.png" width="500">
+
+- We select in the menu "Backend Trusted Application" and Generate Key button.
+
+<img src="https://image.ibb.co/j1YSvf/Selecci-n-025.png" width="500">
+
+- The following window will appear to give access to the web page to our interface (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN)
+
+<img src="https://image.ibb.co/mCcgML/Selecci-n-026.png" width="500">
+
 ## Connectivity between IoT device and WEB application:
 
 ## Connectivity between WEB application and IoT device:

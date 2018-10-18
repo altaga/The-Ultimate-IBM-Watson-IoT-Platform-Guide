@@ -15,6 +15,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 * [Handling of WEB pages with connectivity to IBM Watson IoT Platform](#handling-of-web-pages-with-connectivity-to-ibm-watson-iot-platform)
 * [Connectivity between IoT device and WEB application](#connectivity-between-iot-device-and-web-application)
 * [Connectivity between WEB application and IoT device](#connectivity-between-web-application-and-iot-device)
+* [Comments](#comments)
 * [References](#references)
 
 ## Introduction:
@@ -181,6 +182,10 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 - The section of the code of the web page that is responsible for sending data returned is this.
 
 <img src="https://image.ibb.co/naSHwL/Selecci-n-033.png" width="600">
+
+## Comments:
+
+
 
 ## References:
 

@@ -124,7 +124,8 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 ```C++
 
 #include <ESP8266WiFi.h>
-#include <PubSubClient.h> 
+#include <WiFiClient.h> 
+#include <PubSubClient.h>
 
 //-------- Modify these values -----------
 const char* ssid = "YOUR_SSID";      // The name of your Internet BTW
@@ -138,13 +139,28 @@ const char* password = "YOUR_PASS";  // Your pass
 //-------- Modify these values --------
 
 char server[] = ORG ".messaging.internetofthings.ibmcloud.com";
-char topic[] = "iot-2/evt/status/fmt/json"; // This is the topic that needs to be put in order for data to be sent to the platform, NOT MODIFY.
+char TopicSub[] = "iot-2/cmd/status/fmt/json";
+char TopicPub[] = "iot-2/evt/status/fmt/json"; 
+// This is the topic that needs to be put in order for data to be sent and recieve in the platform, NOT MODIFY.
 char authMethod[] = "use-token-auth";
 char token[] = TOKEN;
 char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;
+unsigned int Delay = 30;    // This time is what the device will take to send data
+unsigned int i=(Delay*100);
 
 WiFiClientSecure wifiClient;
 PubSubClient client(server, 8883, wifiClient); //Never modify the 8883 as it is a safe port for sending data
+
+
+void callback(char* topic, byte* payload, unsigned int length) 
+{
+  String data="";
+  for (int i = 0; i < length; i++) 
+  {
+    data+=char(payload[i]);
+  }
+  Serial.println(data); // In this case we print the data recive from the website.
+}
 
 void setup() {
   Serial.begin(115200); Serial.println();
@@ -158,10 +174,11 @@ void setup() {
   }  
   Serial.println("");
   Serial.print("WiFi connected, IP address: "); Serial.println(WiFi.localIP());
-
+  client.setCallback(callback); // Here we "connect"the callback function to subscribe data receive
 }
 
 void loop() {
+  client.loop();
    
    // Do not modify the delay of 500 ms since it depends on the correct connection.
    if (!!!client.connected()) 
@@ -173,19 +190,29 @@ void loop() {
         delay(500);
      }
      Serial.println();
+     client.subscribe(TopicSub);  // This is for callback
    }
-   
-  String payload ="Hello IBM"; // Data sent, you can also send a json if you want.
-  
-  Serial.print("Sending payload: "); Serial.println(payload);
-    
-  if (client.publish(topic, (char*) payload.c_str())) {
-    Serial.println("Publish ok");
-  } else {
-    Serial.println("Publish failed");
-  }
 
-  delay(30000);
+  if(i>=(Delay*100)) 
+  {
+    String payload ="Hello IBM"; // Data sent, you can also send a json if you want.
+    Serial.print("Sending payload: "); Serial.println(payload);
+      
+    if (client.publish(TopicPub, (char*) payload.c_str())) 
+    {
+      Serial.println("Publish ok");
+    } 
+    else 
+    {
+      Serial.println("Publish failed");
+    }
+    i=0;
+  }
+  else
+  {
+    i++;
+    delay(10);
+  }
 }
 ```
 
@@ -234,13 +261,18 @@ void loop() {
 
 - Once all the settings have been made, connect the IoT device and open the WEB page in order to start receiving messages from the device.
 
-- If everything worked so far you should see an alert every time the device sends the value "Hello IBM", in this case every 30 seconds (Check the delay in the Arduino Code).
+- If everything worked so far you should see an alert every time the device sends the value "Hello IBM", in this case every 30 seconds (Check the "Delay" variable in the Arduino Code).
 
 <img src="https://image.ibb.co/eMZCd0/Selecci-n-030.png" width="600">
 
 ## Connectivity between WEB application and IoT device:
 (Callback).
 
+- Surprise, if you could, a little attention, you will have noticed that the "callback" is already integrated into the Arduino code and each time the device sends a message to the web page the page returns the same message as shown in the image.
+
+<img src="https://image.ibb.co/mnwfi0/Selecci-n-032.png" width="600">
+
+- The section of the code of the web page that is responsible for sending data returned is this.
 
 
 

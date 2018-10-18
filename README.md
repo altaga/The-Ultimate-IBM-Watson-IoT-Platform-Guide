@@ -30,7 +30,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 ## Connectivity between IoT device and WEB application:
 
 ## Connectivity between WEB application and IoT device:
-(Callback).
+ (Callback).
 
 
 

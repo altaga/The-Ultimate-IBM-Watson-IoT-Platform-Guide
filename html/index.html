@@ -6,8 +6,8 @@
 <script>
 // Create a client instance
 
-var org = "lhnt68"; // Your Organization ID
-var apl= "a:lhnt68:veg49wptww" // putt your userName and replace the "-" with ":"
+var org = "YOUR_ORG"; // Your Organization ID
+var apl= "YOUR_MODIFIED_APIKEY" // PUTT YOUR API KEY AND REPLACE THE "-" WITH ":"
 
 client = new Paho.MQTT.Client(org+".messaging.internetofthings.ibmcloud.com", 8883, apl);
 //Example client = new Paho.MQTT.Client("m11.cloudmqtt.com", 32903, "web_" + parseInt(Math.random() * 100, 10));
@@ -17,8 +17,8 @@ client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 var options = {
   useSSL: true,
-  userName: "a-lhnt68-veg49wptww", // Put Here your API KEY
-  password: "Nz85LhJ1n-YLIpqh&0",  // Put Here your Authentication Token
+  userName: "YOUR_APIKEY", // Put Here your API KEY
+  password: "YOUR_TOKEN",  // Put Here your Authentication Token
   onSuccess:onConnect,
   onFailure:doFail
 }

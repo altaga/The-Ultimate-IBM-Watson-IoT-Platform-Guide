@@ -217,14 +217,19 @@ void loop() {
 
 - Download the "html" folder where the basic page for mqtt connectivity with IBM comes from and follow the instructions below the image.
 
-<img src="https://image.ibb.co/h2NnBL/Selecci-n-027.png" width="600">
+<img src="https://image.ibb.co/m49EQf/Selecci-n-029.png" width="600">
 
   - Modify the org variable for your "organization id"
   - Modify the variable apl by your "Api Key" but it is very important that you replace the "-" with ":" for example a example-exmaple001 -> a: example: exmaple001
   - Modify userName for your "Api Key"
   - Modify password for your "Authentication Token".
+  - For the example we have prepared, it is not necessary to modify the "topic" variable because the DeviceType and the DeviceID are already set.
   
--  
+- Once all this is done, open the "localhost" path in the browser once the Apache is turned on.
+
+- If everything worked so far you should see an alert every time the device sends the value "Hello IBM".
+
+<img src="https://image.ibb.co/eMZCd0/Selecci-n-030.png" width="600">
 
 
 ## Connectivity between IoT device and WEB application:

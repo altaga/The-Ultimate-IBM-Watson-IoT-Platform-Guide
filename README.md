@@ -117,7 +117,7 @@ https://image.ibb.co/nPU9af/Selecci-n-017.png
 
 - Once everything is installed, read the following code, understand the comments and try to compile the code.
 
-```Arduino
+```C++
 
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h> 

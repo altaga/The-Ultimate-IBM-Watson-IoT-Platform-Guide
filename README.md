@@ -247,7 +247,8 @@ void loop() {
 <img src="https://image.ibb.co/m49EQf/Selecci-n-029.png" width="600">
 
   - Modify the org variable for your "organization id"
-  - Modify the variable apl by your "Api Key" but it is very important that you replace the "-" with ":" for example a example-exmaple001 -> a: example: exmaple001
+  - Modify the variable apl by your "Api Key" but it is very important that you replace the "-" with ":" for example 
+    "a-example-example001" -> "a:example:example001"
   - Modify userName for your "Api Key"
   - Modify password for your "Authentication Token".
   - For the example we have prepared, it is not necessary to modify the "topic" variable because the DeviceType and the DeviceID are already set.

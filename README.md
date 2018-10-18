@@ -6,7 +6,7 @@ I presented the best guide for using IBM Watson IoT Platform and how to develop 
 Always use technology for improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
 # Table of contents
-* [Management of the IBM Watson IoT Platform](#Management-of-the-IBM-Watson-IoT-Platform)
+* [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
 * [Materials](#materials)
 * [Bt Module](#bt-module)
 * [Raspberry Setup](#raspberry-setup)

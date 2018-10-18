@@ -87,6 +87,103 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 ## Handling of IoT devices using the IBM Watson IoT Platform:
 (Specifically ESP8266 using ArduinoIDE)
 
+- To add your first "Device" we select the "+ Add Device" box.
+
+https://image.ibb.co/mcdGo0/Selecci-n-012.png
+
+- Fill the fields of "Device Type" with the name you like to put on your device is only a label in our case we will put "ESP8266" and as Device ID we will put "Test001" but it can be any ID, it is recommended that this ID be the registration number of the device, after that press "Next".
+
+https://image.ibb.co/j2HgML/Selecci-n-014.png
+
+- Insert the "Metadata" that you like and press "Next".
+
+https://image.ibb.co/grLkgL/Selecci-n-015.png
+
+- Leave the field of "Authentication Token" empty, but if you like you can put your own Token, I recommend leaving empty for IBM to provide you with a unique code for your device,after that press "Next".
+
+https://image.ibb.co/huJz80/Selecci-n-016.png
+
+- In the following box just press "Done".
+
+- In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
+
+https://image.ibb.co/nPU9af/Selecci-n-017.png
+
+- For the Arduino code to work we need to install the following boards and libraries.
+  - Libraries.
+    - PubSubClient 
+  - Boards (To install the "board" use the following tutorial.).
+    - https://github.com/esp8266/Arduino
+
+- Once everything is installed, read the following code, understand the comments and try to compile the code.
+
+```Arduino
+
+#include <ESP8266WiFi.h>
+#include <PubSubClient.h> 
+
+//-------- Modify these values -----------
+const char* ssid = "YOUR_SSID";      // The name of your Internet BTW
+const char* password = "YOUR_PASS";  // Your pass 
+
+#define ORG "YOUR_ORGANIZATION_ID" // This information is in the previous image
+#define DEVICE_ID "Test001"        //  Only for this Example 
+#define DEVICE_TYPE "ESP8266"      // your device type 
+#define TOKEN "YOUR_TOKEN"         // your device token
+
+//-------- Modify these values --------
+
+char server[] = ORG ".messaging.internetofthings.ibmcloud.com";
+char topic[] = "iot-2/evt/status/fmt/json"; // This is the topic that needs to be put in order for data to be sent to the platform, NOT MODIFY.
+char authMethod[] = "use-token-auth";
+char token[] = TOKEN;
+char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;
+
+WiFiClientSecure wifiClient;
+PubSubClient client(server, 8883, wifiClient);
+
+void setup() {
+  Serial.begin(115200); Serial.println();
+  Serial.print("Connecting to "); Serial.print(ssid);
+  if (strcmp (WiFi.SSID().c_str(), ssid) != 0) {
+     WiFi.begin(ssid, password);
+  }
+  while (WiFi.status() != WL_CONNECTED) {
+     delay(500);
+     Serial.print(".");
+  }  
+  Serial.println("");
+  Serial.print("WiFi connected, IP address: "); Serial.println(WiFi.localIP());
+
+}
+
+void loop() {
+   
+   // Do not modify the delay of 500 ms since it depends on the correct connection.
+   if (!!!client.connected()) 
+   {
+     Serial.print("Reconnecting client to "); Serial.println(server);
+     while ( !client.connect(clientId, authMethod, token)) 
+     {
+        Serial.print(".");
+        delay(500);
+     }
+     Serial.println();
+   }
+   
+  String payload ="Hello IBM"; // Data sent, you can also send a json if you want.
+  
+  Serial.print("Sending payload: "); Serial.println(payload);
+    
+  if (client.publish(topic, (char*) payload.c_str())) {
+    Serial.println("Publish ok");
+  } else {
+    Serial.println("Publish failed");
+  }
+
+  delay(30000);
+}
+```
 ## Handling of WEB pages with connectivity to IBM Watson IoT Platform:
 
 ## Connectivity between IoT device and WEB application:

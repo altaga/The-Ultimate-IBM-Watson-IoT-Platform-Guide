@@ -276,7 +276,11 @@ void loop() {
 
 <img src="https://image.ibb.co/naSHwL/Selecci-n-033.png" width="600">
 
+## References:
 
+- https://console.bluemix.net/docs/services/IoT/index.html
+- https://github.com/ibm-watson-iot/device-arduino
+- https://developer.ibm.com/recipes/tutorials/connect-an-esp8266-with-the-arduino-sdk-to-the-ibm-iot-foundation/
 
 
 

@@ -72,11 +72,11 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - Put the name that Service Name likes where it says "ExampleName" and select the corresponding region.
 
-<img src="https://image.ibb.co/k7G8kf/Selecci-n-009.png" width="400">
+<img src="https://image.ibb.co/k7G8kf/Selecci-n-009.png" width="600">
 
 - In this case select the "Lite" plan to start developing and once selected press "Create".
 
-<img src="https://image.ibb.co/ggAzaf/Selecci-n-010.png" width="400">
+<img src="https://image.ibb.co/ggAzaf/Selecci-n-010.png" width="600">
 
 -Press "Launch" to start the service.
 

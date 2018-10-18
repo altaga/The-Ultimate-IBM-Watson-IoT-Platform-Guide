@@ -225,17 +225,22 @@ void loop() {
   - Modify password for your "Authentication Token".
   - For the example we have prepared, it is not necessary to modify the "topic" variable because the DeviceType and the DeviceID are already set.
   
-- Once all this is done, open the "localhost" path in the browser once the Apache is turned on.
+- Once all this is done, open the "localhost" path in the browser once the Apache is turned on, also in the debug console you can see the message "onConnect"..
 
-- If everything worked so far you should see an alert every time the device sends the value "Hello IBM".
-
-<img src="https://image.ibb.co/eMZCd0/Selecci-n-030.png" width="600">
+<img src="https://image.ibb.co/fdJFGL/Selecci-n-031.png" width="400">
 
 
 ## Connectivity between IoT device and WEB application:
 
+- Once all the settings have been made, connect the IoT device and open the WEB page in order to start receiving messages from the device.
+
+- If everything worked so far you should see an alert every time the device sends the value "Hello IBM", in this case every 30 seconds (Check the delay in the Arduino Code).
+
+<img src="https://image.ibb.co/eMZCd0/Selecci-n-030.png" width="600">
+
 ## Connectivity between WEB application and IoT device:
 (Callback).
+
 
 
 

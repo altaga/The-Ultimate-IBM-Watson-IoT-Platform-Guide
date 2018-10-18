@@ -6,16 +6,24 @@ I presented the best guide for using IBM Watson IoT Platform and how to develop 
 Always use technology for improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
 # Table of contents
-* [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
+* [Introduction](#introduction)
 * [Materials](#materials)
-* [Bt Module](#bt-module)
-* [Raspberry Setup](#raspberry-setup)
-* [Software Setup](#software-setup)
+* [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
+* [Handling of WEB pages with connectivity to IBM Watson IoT Platform](#handling-of-web-pages-with-connectivity-to-ibm-watson-iot-platform)
+* [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform-(specifically-esp8266-using-arduinoide))
 * [Make Portble](#make-portable)
 * [SSH Setup Optional](#ssh-setup-optional)
 * [References](#references)
 
+## Introduction:
+
+## Materials:
+
 ## Management of the IBM Watson IoT Platform:
+
+## Handling of WEB pages with connectivity to IBM Watson IoT Platform
+
+## Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)
 
 In this tutorial we will talk about the following topics.
 - Management of the IBM Watson IoT Platform.

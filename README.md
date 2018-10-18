@@ -56,31 +56,31 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 - Register in the IBM Bluemix platform in case you do not already have an account.
 (https://console.bluemix.net)
 
-<img src="https://image.ibb.co/cYC65f/Selecci-n-003.png" width="800">
+<img src="https://image.ibb.co/cYC65f/Selecci-n-003.png" width="400">
 
 - In the search box, we put "Watson IoT Platform"
 
-https://image.ibb.co/f3XaWL/Selecci-n-004.png
+<img src="https://image.ibb.co/f3XaWL/Selecci-n-004.png" width="400">
 
 - We select the Search option "Watson IoT Platform" in Catalog.
 
-https://image.ibb.co/b7HaWL/Selecci-n-005.png
+<img src="https://image.ibb.co/cYC65f/Selecci-n-005.png" width="400">
 
 - We select "Internet of Things Platform".
 
-https://image.ibb.co/jig8kf/Selecci-n-007.png
+<img src="https://image.ibb.co/b7HaWL/Selecci-n-007.png" width="400">
 
 - Put the name that Service Name likes where it says "ExampleName" and select the corresponding region.
 
-https://image.ibb.co/k7G8kf/Selecci-n-009.png
+<img src="https://image.ibb.co/cYC65f/Selecci-n-009png" width="400">
 
 - In this case select the "Lite" plan to start developing and once selected press "Create".
 
-https://image.ibb.co/ggAzaf/Selecci-n-010.png
+<img src="https://image.ibb.co/cYC65f/Selecci-n-010.png" width="400">
 
 -Press "Launch" to start the service.
 
-https://image.ibb.co/epEmML/Selecci-n-011.png
+<img src="https://image.ibb.co/cYC65f/Selecci-n-011.png" width="400">
 
 - At this time we have managed to generate our IoT service at IBM.
 

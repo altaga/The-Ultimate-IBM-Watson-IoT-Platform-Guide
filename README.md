@@ -1,9 +1,9 @@
 # The-Ultimate-IBM-Watson-IoT-Platform-Guide
-I presented the best guide for using IBM Watson IoT Platform and how to develop WEB applications with IoT devices.
+Here I present you the best guide for using IBM Watson IoT Platform (not saying much because there is no other guide online for this xD) and how to develop WEB applications with IoT devices.
 
 <img src="https://hackster.imgix.net/uploads/attachments/612935/wpid-watch_dogs-e3-5_aVW4IYDttS.jpg?auto=compress%2Cformat&w=1280&h=960&fit=max" width="800">
 
-Always use technology for improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
+Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
 # Table of contents
 
@@ -12,7 +12,7 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 * [PC Setup](#pc-setup)
 * [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
 * [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform)
-* [Handling of WEB pages with connectivity to IBM Watson IoT Platform](#handling-of-web-pages-with-connectivity-to-ibm-watson-iot-platform)
+* [Handling WEB pages with connectivity to IBM Watson IoT Platform](#handling-web-pages-with-connectivity-to-ibm-watson-iot-platform)
 * [Connectivity between IoT device and WEB application](#connectivity-between-iot-device-and-web-application)
 * [Connectivity between WEB application and IoT device](#connectivity-between-web-application-and-iot-device)
 * [Comments](#comments)
@@ -22,13 +22,13 @@ Always use technology for improve the world, if you are a black hat or gray hat 
 
 The software world is constantly changing and evolving.
 
-The definition of cloud computing is to offer services through the connectivity and large scale of the Internet. Cloud computing provides access to software resources at an international level, without the need for a server of your own, as it is a software application that serves various clients. Multilocation is what differentiates cloud computing from simple outsourcing and from older application service provider models. **Now, small businesses have the power to develop large-scale applications without large resources** IMPORTANT.
+The definition of cloud computing is to offer services through connectivity and the large scale of the Internet. Cloud computing provides access to software resources at an international level, without the need for a server of your own, as it is a software application that serves various clients. Multilocation is what differentiates cloud computing from simple outsourcing and from older application service provider models. **Now, small businesses have the power to develop large-scale applications without large resources** IMPORTANT.
 
-Cloud computing offers individuals and businesses of all sizes the capacity of a pool of computing resources with good maintenance, secure, easily accessible and on demand, such as servers, data storage and application solution (for example MQTT as it is in this case for IoT).
+Cloud computing offers individuals and businesses of all sizes the capacity of a pool of computing resources with good maintenance, secure, easily accessible and on demand, such as servers, data storage and application solution (for example MQTT in this case for IoT).
 
-In a simple way, cloud computing is a technology that allows remote access to softwares, file storage and data processing through the Internet, being an alternative to running on a personal computer or server local. In the cloud model, there is no need to install applications locally on computers.
+In a simple way, cloud computing is a technology that allows remote access to software, file storage and data processing through the Internet, being an alternative to running on a personal computer or local server. In the cloud model, there is no need to install applications locally on computers.
 
-IMPORTANT NOTE: Watson does not install on his computers, he "lives" in the cloud.
+IMPORTANT NOTE: Watson does not installs on any computer, he "lives" in the cloud.
 
 ## Materials:
 
@@ -54,12 +54,12 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 ## Management of the IBM Watson IoT Platform:
 
-- Register in the IBM Bluemix platform in case you do not already have an account.
+- Register in the IBM Bluemix platform in case you do not have an account.
 (https://console.bluemix.net)
 
 <img src="https://image.ibb.co/cYC65f/Selecci-n-003.png" width="400">
 
-- In the search box, we put "Watson IoT Platform"
+- In the search box, we input "Watson IoT Platform"
 
 <img src="https://image.ibb.co/f3XaWL/Selecci-n-004.png" width="400">
 
@@ -71,7 +71,7 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 <img src="https://image.ibb.co/jig8kf/Selecci-n-007.png" width="400">
 
-- Put the name that Service Name likes where it says "ExampleName" and select the corresponding region.
+- Put the name that the Service Name likes where it says "ExampleName" and select the corresponding region.
 
 <img src="https://image.ibb.co/k7G8kf/Selecci-n-009.png" width="600">
 
@@ -106,7 +106,7 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 
 - In the following box just press "Done".
 
-- In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THESE DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
+- In the next window you will find all the necessary data to be able to access the cloud (SAVE ALL THIS DATA SINCE THE AUTHENTICATION TOKEN CAN NOT SEE IT AGAIN).
 
 <img src="https://image.ibb.co/nPU9af/Selecci-n-017.png" width="600">
 
@@ -175,7 +175,7 @@ https://websiteforstudents.com/installing-apache2-mariadb-on-ubuntu-16-04-17-10-
 ## Connectivity between WEB application and IoT device:
 (Callback).
 
-- Surprise, if you could, a little attention, you will have noticed that the "callback" is already integrated into the Arduino code and each time the device sends a message to the web page the page returns the same message as shown in the image.
+- Surprise!, if you paid a little attention, you will have noticed that the "callback" is already integrated into the Arduino code and each time the device sends a message to the web page the page returns the same message as shown in the image.
 
 <img src="https://image.ibb.co/iAkyLf/Selecci-n-034.png" width="600">
 

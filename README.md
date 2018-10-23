@@ -1,7 +1,7 @@
 # The-Ultimate-IBM-Watson-IoT-Platform-Guide
 Here I present you the best guide for using IBM Watson IoT Platform (not saying much because there is no other guide online for this xD) and how to develop WEB applications with IoT devices.
 
-<img src="https://hackster.imgix.net/uploads/attachments/612935/wpid-watch_dogs-e3-5_aVW4IYDttS.jpg?auto=compress%2Cformat&w=1280&h=960&fit=max" width="800">
+<img src="http://www.ilb.eus/wp-content/uploads/2018/05/WatsonIoT.jpg" width="800">
 
 Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
